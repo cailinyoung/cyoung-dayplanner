@@ -12,6 +12,7 @@ We were tasked to create an app that would give users the opportunity to add the
 
 ## Acceptance Criteria
 
+
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -32,7 +33,7 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+![day planner demo](.assets/05-third-party-apis-homework-demo.gif)
 
 
 ## Grading Requirements
