@@ -1,29 +1,30 @@
 // moment api date display  
 $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
+$(document).ready(function () {
+
 // save button semantics
-$(".saveBtn").on("click", function () {
-    var time = $(this).parent().attr("id");
-    var value = $(this).siblings(".description").val();
+$(".saveBtn").on("click", function(){
+    const time = $(this).parent().attr("id");
+    const value = $(this).siblings(".description").val();
     localStorage.setItem(time, value);
 });
 
 //  local save data
-$("nineHour .description").val(localStorage.getItem("nineHour"));
-$("tenHour .description").val(localStorage.getItem("tenHour"));
-$("elevenHour .description").val(localStorage.getItem("elevenHour"));
-$("twelveHour .description").val(localStorage.getItem("twelveHour"));
-$("#oneHour .description").val(localStorage.getItem("oneHour"));
-$("#twoHour .description").val(localStorage.getItem("twoHour"));
-$("#threeHour .description").val(localStorage.getItem("threeHour"));
-$("#fourHour .description").val(localStorage.getItem("fourHour"));
-$("#fiveHour .description").val(localStorage.getItem("fiveHour"));
+$("#nineAm .description").val(localStorage.getItem("nineAm"));
+$("#tenAm .description").val(localStorage.getItem("tenAm"));
+$("#elevenAm .description").val(localStorage.getItem("elevenAm"));
+$("#twelvePm .description").val(localStorage.getItem("twelvePm"));
+$("#onePm .description").val(localStorage.getItem("onePm"));
+$("#twoPm .description").val(localStorage.getItem("twoPm"));
+$("#threePm .description").val(localStorage.getItem("threePm"));
+$("#fourPm .description").val(localStorage.getItem("fourPm"));
+$("#fivePm .description").val(localStorage.getItem("fivePm"));
 
-$(document).ready(function () {
-    function hourConfiguration() {
+    function hourConfig() {
         var currentHour = moment().hours();
 
-        $(".row").each(function () {
+        $(".time-block").each(function () {
             const hourSlot = parseInt($(this).attr("id").split("-")[1]);
 
             if (hourSlot === currentHour) {
@@ -40,8 +41,8 @@ $(document).ready(function () {
                 $(this).addClass("future");
             }
         });
-    }    
+    }   
 
-    hourConfiguration();
+    hourConfig();
 
 });
