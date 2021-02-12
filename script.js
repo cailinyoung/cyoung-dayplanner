@@ -9,21 +9,21 @@ $(".saveBtn").on("click", function () {
 });
 
 //  local save data
-$("#hour-9 .description").val(localStorage.getItem("hour-9"));
-$("#hour-10 .description").val(localStorage.getItem("hour-10"));
-$("#hour-11 .description").val(localStorage.getItem("hour-11"));
-$("#hour-12 .description").val(localStorage.getItem("hour-12"));
-$("#hour-13 .description").val(localStorage.getItem("hour-13"));
-$("#hour-14 .description").val(localStorage.getItem("hour-14"));
-$("#hour-15 .description").val(localStorage.getItem("hour-15"));
-$("#hour-16 .description").val(localStorage.getItem("hour-16"));
-$("#hour-17 .description").val(localStorage.getItem("hour-17"));
+$("nineAM .description").val(localStorage.getItem("hour-9"));
+$("tenAM .description").val(localStorage.getItem("hour-10"));
+$("elevenAM .description").val(localStorage.getItem("hour-11"));
+$("twelvePM .description").val(localStorage.getItem("hour-12"));
+$("#onePM .description").val(localStorage.getItem("hour-13"));
+$("#twoPM .description").val(localStorage.getItem("hour-14"));
+$("#threePM .description").val(localStorage.getItem("hour-15"));
+$("#fourPM .description").val(localStorage.getItem("hour-16"));
+$("#fivePM .description").val(localStorage.getItem("hour-17"));
 
 $(document).ready(function () {
     function hourConfiguration() {
         var currentHour = moment().hours();
 
-        $(".time-block").each(function () {
+        $(".row").each(function () {
             const hourSlot = parseInt($(this).attr("id").split("-")[1]);
 
             if (hourSlot === currentHour) {
