@@ -1,5 +1,8 @@
 # CAILIN YOUNG - Third-Party APIs: Work Day Scheduler
 
+## Live Site Link
+https://cailinyoung.github.io/cyoung-dayplanner/
+
 ## Your Task
 
 We were assigned this app to showcase our skills learned throughout the week with javascript.
@@ -24,4 +27,11 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+```
+
+## Links
+
+```
+email: cailinfayyoung@gmail.com
+github: github.com/cailinyoung
 ```
