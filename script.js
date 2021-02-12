@@ -1,8 +1,6 @@
 // moment api date display  
 $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
-$(document).ready(function () {
-
 // save button semantics
 $(".saveBtn").on("click", function(){
     const time = $(this).parent().attr("id");
@@ -21,15 +19,19 @@ $("#threePm .description").val(localStorage.getItem("threePm"));
 $("#fourPm .description").val(localStorage.getItem("fourPm"));
 $("#fivePm .description").val(localStorage.getItem("fivePm"));
 
-    function hourConfig() {
-        var currentHour = moment().hours();
+// time configuration
+$(document).ready(function () {
 
+    function hourConfig() {
+        const currentHour = moment().hours();
+
+        // color coordinating hour semantics 
         $(".time-block").each(function () {
             const hourSlot = parseInt($(this).attr("id").split("-")[1]);
 
             if (hourSlot === currentHour) {
                 $(this).removeClass("past");
-                $(this).addClass("future");
+                $(this).addClass("current");
             }
             else if (hourSlot < currentHour) {
                     $(this).addClass("past");
