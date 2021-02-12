@@ -43,7 +43,7 @@ textarea {
 }
 
 .past {
-    background-color: #F8F8F8;
+    background-color: lightgray;
     color: white;
 }
 
@@ -61,7 +61,7 @@ textarea {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
+    background-color: #D3C4FF;
     color: white;
 }
 
