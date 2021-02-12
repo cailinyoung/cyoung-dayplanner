@@ -9,15 +9,15 @@ $(".saveBtn").on("click", function () {
 });
 
 //  local save data
-$("nineAm .description").val(localStorage.getItem("nineAm"));
-$("tenAm .description").val(localStorage.getItem("tenAm"));
-$("elevenAm .description").val(localStorage.getItem("elevenAm"));
-$("twelvePm .description").val(localStorage.getItem("twelvePm"));
-$("#onePm .description").val(localStorage.getItem("onePm"));
-$("#twoPm .description").val(localStorage.getItem("twoPm"));
-$("#threePm .description").val(localStorage.getItem("threePm"));
-$("#fourPm .description").val(localStorage.getItem("fourPm"));
-$("#fivePm .description").val(localStorage.getItem("fivePm"));
+$("nineAmE .description").val(localStorage.getItem("nineAmE"));
+$("tenAmE .description").val(localStorage.getItem("tenAmE"));
+$("elevenAmE .description").val(localStorage.getItem("elevenAmE"));
+$("twelvePmE .description").val(localStorage.getItem("twelvePmE"));
+$("#onePmE .description").val(localStorage.getItem("onePmE"));
+$("#twoPmE .description").val(localStorage.getItem("twoPmE"));
+$("#threePmE .description").val(localStorage.getItem("threePmE"));
+$("#fourPmE .description").val(localStorage.getItem("fourPmE"));
+$("#fivePmE .description").val(localStorage.getItem("fivePmE"));
 
 $(document).ready(function () {
     function hourConfiguration() {
